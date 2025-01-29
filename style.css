@@ -1,11 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+}
+
 h1{
-    background-color: rgb(102, 2, 102);
+
+    background-color: rgb(213, 185, 185);
 
 }
+
+h4{
+    padding-top:10px ;
+    background-color:rgb(207, 198, 188);
+}
+
+.top-emoji {
+    padding-bottom: 0px;
+    text-align: right;
+    font-size: 20px; 
+    margin-top: 10px;
+    
+}
+
 body{
+    margin: 0;
     background-color: black;
-    color: white;
+    color:rgb(11, 11, 11);
+    background-image: url('blur.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu{
+
+    font-weight:lighter;
+    width: 0;
+    float:left;
+    height: 90px;
+} 
+
+
+ul{
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left:10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.img{
+    background-image:blur.jpg;
+    padding-top: 30px;
+    text-align: center;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 p{
-    color: aliceblue;
+    background-color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.gap{
+    text-align: center;
+    text-shadow: blur-radius color;
+    word-spacing: 100px;
+    
+}
+
+iframe{
+    margin-top: 10px;
+    width:80%;
+}
+
+.images{
+        padding-top: 10px;
+        display: flex;
+        justify-content: center; 
+        gap: 20px; 
+    }
+marquee{
+    background-color: white;
 }
