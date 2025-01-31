@@ -61,10 +61,7 @@ body{
     text-align: center;
     
 }
-a {
-    text-decoration: none;
-    color: black;
-}
+
 p{
     background-color: aliceblue;
     padding-top: 10px;
@@ -100,7 +97,66 @@ iframe{
 
 }
 marquee{
-    background-color: white;
+    background-color:rgb(131, 143, 148);
+    color:white;
 }  
-
-
+ .down{
+    padding-bottom: 50;
+    background-color: rgb(111, 135, 144);
+    color:white;
+    white-space: pre-line;
+ }
+ .down a{
+    text-decoration: none;
+ }
+    
+ .down:hover{
+   color: black;
+   background-color:white;
+ } 
+ 
+ a.shp:hover{
+    color:black ;
+    background-color: rgb(111, 135, 144);
+    padding: 3px;
+ }
+ a.shp1:hover{
+    color:black ;
+    background-color: rgb(111, 135, 144);
+    padding: 3px;
+ }
+ a.shp2:hover{
+    color:black ;
+    background-color: rgb(111, 135, 144);
+    padding: 3px;
+ }
+ a.shp3:hover{
+    color:black ;
+    background-color: rgb(111, 135, 144);
+    padding: 3px;
+ }
+ a.shp4:hover{
+    color:black ;
+    background-color: rgb(111, 135, 144);
+    padding: 3px;
+ }
+ a.shp5:hover{
+    color:black ;
+    background-color:rgb(111, 135, 144);
+    padding: 3px;
+ }
+ a.shp6:hover{
+    color:black ;
+    background-color:rgb(111, 135, 144);
+    padding: 3px;
+ }
+ a.shp7:hover{
+    color:black ;
+    background-color: rgb(111, 135, 144);
+    padding: 3px;
+ }
+ a.shp8:hover{
+    color:black ;
+    background-color: rgb(111, 135, 144);
+    padding: 3px;
+ }
