@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <title> student mark form</title>
+    <script src=forms.js ></script>
+    <link rel ="stylesheet" href="style.css"></link>
+</head>
+<body>
+        <div class="button">
+            <button onclick="display1()">Student Details </button>
+            <button onclick="display2()">Student mark </button>
+        </div>
+
+        
+        <div class="form1" id="f1">
+            <h1>Student Details</h1>
+                Name:<input type = "text" placeholder="Enter Student Name"  id="name"/><br><br>
+                email:<input type = "email" placeholder="abcd@email.com" id="email"/><br><br>
+                rollno:<input type="text" placeholder="Enter rollno" id="rollno"/><br><br>
+                dob:<input type="date"  id="dob"/><br><br>
+                <button onclick="student()">submit </button>
+                <div id = "studentresult" ></div>       
+        </div>
+        
+         
+        
+        <div class="form2" id="f2">
+            <h1>Student mark</h1>
+            Tamil:<input type ="number" placeholder="Language 1"  id="tamil"><br><br>
+            English:<input type ="number" placeholder="Language 2"  id="english"><br><br>
+            Maths:<input type ="number"  placeholder="Maths"  id="maths"><br><br>
+            Science:<input type ="number"  placeholder="Science"  id="science"><br><br>
+            Social:<input type ="number"  placeholder="Social"  id="social"><br><br>           
+            <button onclick="mark()">Submit mark </button><br><br>
+            <div id= "markresult"></div> 
+           
+        </div>
+    </body>
+</html>

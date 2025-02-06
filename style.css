@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(145, 155, 152);
+    font-family:'Times New Roman', Times, serif;
+
+}
+.button{
+    text-align: center;
+    margin-top:10%;
+    background-color:azure;
+}
+h1{
+    text-align: center;
+}
+.form1{
+    text-align: center;
+}
+.form2{
+    text-align: center;
+}
+
+#f1{
+    display:none;
+}
+#f2{
+   display: none;
+}
