@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Quiz </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .quiz-container {
+            background-color: rgb(181, 196, 181);
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+           
+        }
+        button {
+            background-color:rgb(240, 227, 227);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Simple Quiz</h1>
+        <p id="question"></p>
+        <input type="text" id="answer" placeholder="Enter your answer">
+        <button onclick="checkAnswer()">Submit</button>
+        <p id="feedback"></p>
+    </div>
+
+    <script>
+        const questions = [
+           { question:  "1.What is the full form of HTML ?", answer: "Hyper Text Markup Language"},
+           { question:  "2.What is meant by <p> tag ?", answer: "paragraph"},
+           { question: "3.What is the smallest header in HTML by default ?", answer: "<h6>" }
+        ];
+
+        
+        let currentQuestion = 0;         //keep track of current question
+        let score = 0;
+
+        function showQuestion() {
+            console.log("function call")
+            document.getElementById("question").textContent = questions[currentQuestion].question;         //display current question
+        }
+
+        function checkAnswer() {
+            let userAnswer = document.getElementById("answer").value;
+            let correctAnswer = questions[currentQuestion].answer;
+            let feedback = document.getElementById("feedback");
+            
+            if (userAnswer === correctAnswer) {
+                feedback.textContent = " your answer is Correct!";
+                feedback.style.color = "green";
+                score++;
+            } else {
+                feedback.textContent = "Incorrect! The correct answer is: " + correctAnswer;
+                feedback.style.color = "red";
+            }
+            
+            currentQuestion++;
+
+            document.getElementById("answer").value = "";    //Clears the input field after the user submits the answer
+            
+            if (currentQuestion < questions.length) {
+                setTimeout(() => {                            
+                    feedback.textContent = "";
+                    showQuestion();
+                }, 3000);
+            } else {
+                setTimeout(() => {
+                    document.querySelector(".quiz-container").innerHTML = `
+                       <h1>Quiz Completed!</h1>
+                        <p>Your score: ${score}/${questions.length}</p>
+                    `;
+                }, 3000);
+            }
+        }
+
+        showQuestion();
+    </script>
+</body>
+</html>
